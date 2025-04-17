@@ -2,7 +2,7 @@
 
 > A Verilog-based 2D platformer game inspired by *Celeste*, recreated on the Basys3 FPGA board with a PMOD OLED display and Xbox controller input.
 
-![Celeste Title Screen](assets/title_screen.png) <!-- Add a nice in-game title image here -->
+![Celeste Title Screen](assets/main.png)
 
 ---
 
@@ -28,8 +28,6 @@
 - **Death** triggers explosion and respawn with blinking invulnerability.
 - **Objective** is to reach the end of each level.
 
-![Controller Setup](assets/controller_setup.jpg) <!-- Insert image of controller and ESP32 connected to FPGA -->
-
 ---
 
 ## 🧪 Developer Mode
@@ -54,14 +52,14 @@ Activate by flipping **SW[15] ON** on the Basys3 board.
 ### 🌧️ Rain Animation
 A procedural effect where each pixel's vertical position is offset over time to create falling rain.
 
-![Rain Animation](assets/rain.gif) <!-- Add rain animation image/gif -->
+![Rain Animation](assets/rain.png)
 
 ---
 
 ### 💥 Explosion & Respawn
 On death, an animated explosion plays followed by a blinking invulnerability phase.
 
-![Explosion Animation](assets/explosion.gif) <!-- Add a death/explosion image -->
+![Explosion Animation](assets/explosion.png)
 
 ---
 
@@ -70,8 +68,6 @@ On death, an animated explosion plays followed by a blinking invulnerability pha
 - **Explosion State:** Expanding visual effect
 - **Blink State:** Temporary invulnerability and level transitions
 
-![Sprite FSM](assets/sprite_states.png) <!-- Optional: FSM diagram or sprite examples -->
-
 ---
 
 ### 🧱 Collision Detection
@@ -79,12 +75,15 @@ On death, an animated explosion plays followed by a blinking invulnerability pha
 - 8-directional collision flag system
 - Works across all four levels
 
+![Collision-Detection](assets/collision.png)
+
 ---
 
 ### ⛅ Level Transitions
 Smooth fade-in/fade-out using linear RGB565 interpolation.
 
-![Fade Animation](assets/level_transition.gif) <!-- Add level transition gif -->
+Example: Fade animation between level 0 and level 1.
+![Fade Animation](assets/fade.png)
 
 ---
 
