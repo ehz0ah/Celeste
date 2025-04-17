@@ -1,6 +1,6 @@
 # 🎮 Celeste FPGA: Built with gates, not game engines.
 
-> A Verilog-based 2D platformer game inspired by *Celeste*, recreated on the Basys3 FPGA board with a PMOD OLED display and Xbox controller input.
+> A Verilog-based 2D platformer game inspired by _Celeste_, recreated on the Basys3 FPGA board with a PMOD OLED display and Xbox controller input.
 
 ![Celeste Title Screen](assets/setup.png)
 
@@ -17,12 +17,12 @@
 
 ## 🎮 Controls
 
-| Action     | Button             |
-|------------|--------------------|
-| Jump       | `A`                |
-| Dash       | `X` + Analog Stick |
-| Move       | Left Analog Stick  |
-| Start/Reset| `Y`                |
+| Action      | Button             |
+| ----------- | ------------------ |
+| Jump        | `A`                |
+| Dash        | `X` + Analog Stick |
+| Move        | Left Analog Stick  |
+| Start/Reset | `Y`                |
 
 - **Dash** is only usable once in mid-air. Resets when grounded.
 - **Death** triggers explosion and respawn with blinking invulnerability.
@@ -34,14 +34,14 @@
 
 Activate by flipping **SW[15] ON** on the Basys3 board.
 
-| Switch | Action               |
-|--------|----------------------|
-| SW[0]  | Jump to Level 0      |
-| SW[1]  | Jump to Level 1      |
-| SW[2]  | Jump to Level 2      |
-| SW[3]  | Jump to Level 3      |
-| SW[4]  | Jump to End Screen   |
-| SW[14] | Return to Home Screen|
+| Switch | Action                |
+| ------ | --------------------- |
+| SW[0]  | Jump to Level 0       |
+| SW[1]  | Jump to Level 1       |
+| SW[2]  | Jump to Level 2       |
+| SW[3]  | Jump to Level 3       |
+| SW[4]  | Jump to End Screen    |
+| SW[14] | Return to Home Screen |
 
 > 🔁 Switches are one-hot encoded: Use only **one switch at a time** for smooth transitions.
 
@@ -50,6 +50,7 @@ Activate by flipping **SW[15] ON** on the Basys3 board.
 ## ✨ Features
 
 ### 🌧️ Rain Animation
+
 A procedural effect where each pixel's vertical position is offset over time to create falling rain.
 
 ![Rain Animation](assets/rain.png)
@@ -57,6 +58,7 @@ A procedural effect where each pixel's vertical position is offset over time to 
 ---
 
 ### 💥 Explosion & Respawn
+
 On death, an animated explosion plays followed by a blinking invulnerability phase.
 
 ![Explosion Animation](assets/explosion.png)
@@ -64,6 +66,7 @@ On death, an animated explosion plays followed by a blinking invulnerability pha
 ---
 
 ### 🏃 Sprite Animation & FSM
+
 - **Normal State:** Responsive to movement
 - **Explosion State:** Expanding visual effect
 - **Blink State:** Temporary invulnerability and level transitions
@@ -71,6 +74,7 @@ On death, an animated explosion plays followed by a blinking invulnerability pha
 ---
 
 ### 🧱 Collision Detection
+
 - Modular functions: `is_dead`, `is_level_done`, `is_obstructed`
 - 8-directional collision flag system
 - Works across all four levels
@@ -80,6 +84,7 @@ On death, an animated explosion plays followed by a blinking invulnerability pha
 ---
 
 ### ⛅ Level Transitions
+
 Smooth fade-in/fade-out using linear RGB565 interpolation.
 
 Example: Fade animation between level 0 and level 1.
@@ -88,12 +93,14 @@ Example: Fade animation between level 0 and level 1.
 ---
 
 ### 🕹️ Xbox Controller via ESP32
+
 - Controller inputs processed by **Bluepad32** and transmitted via **UART**.
 - Buttons encoded into a byte and decoded on FPGA side using a Verilog module.
 
 ---
 
 ### 💀 Death Counter
+
 - 7-segment display shows number of deaths.
 - Automatically resets in Level 0 (Tutorial).
 
@@ -101,8 +108,8 @@ Example: Fade animation between level 0 and level 1.
 
 ## 📚 References
 
-- 🎨 [Pixilart](https://www.pixilart.com/): For sprites & backgrounds  
+- 🎨 [Pixilart](https://www.pixilart.com/): For sprites & backgrounds
 - 🕹️ [Bluepad32](https://github.com/ricardoquesada/esp-idf-arduino-bluepad32-template): For controller connectivity
-- 🎮 [PICO-8 Celeste](https://www.lexaloffle.com/bbs/?tid=2145): Original 8-bit inspiration  
+- 🎮 [PICO-8 Celeste](https://www.lexaloffle.com/bbs/?tid=2145): Original 8-bit inspiration
 
 ---
