@@ -1,4 +1,4 @@
-# 🎮 Celeste FPGA: A 2D Platformer on Basys3
+# 🎮 Celeste FPGA: Built with gates, not game engines.
 
 > A Verilog-based 2D platformer game inspired by *Celeste*, recreated on the Basys3 FPGA board with a PMOD OLED display and Xbox controller input.
 
