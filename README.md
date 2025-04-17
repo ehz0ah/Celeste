@@ -2,7 +2,7 @@
 
 > A Verilog-based 2D platformer game inspired by *Celeste*, recreated on the Basys3 FPGA board with a PMOD OLED display and Xbox controller input.
 
-![Celeste Title Screen](assets/main.png)
+![Celeste Title Screen](assets/setup.png)
 
 ---
 
@@ -102,7 +102,7 @@ Example: Fade animation between level 0 and level 1.
 ## 📚 References
 
 - 🎨 [Pixilart](https://www.pixilart.com/): For sprites & backgrounds  
-- 🕹️ [Bluepad32](https://github.com/ricardoquesada/esp-idf-arduino-bluepad32-template)  
+- 🕹️ [Bluepad32](https://github.com/ricardoquesada/esp-idf-arduino-bluepad32-template): For controller connectivity
 - 🎮 [PICO-8 Celeste](https://www.lexaloffle.com/bbs/?tid=2145): Original 8-bit inspiration  
 
 ---
