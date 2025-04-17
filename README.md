@@ -99,8 +99,6 @@ Example: Fade animation between level 0 and level 1.
 
 ---
 
----
-
 ## 📚 References
 
 - 🎨 [Pixilart](https://www.pixilart.com/): For sprites & backgrounds  
