@@ -11,7 +11,7 @@
 1. Connect the **PMOD OLED** to the JB port of the **Basys3 board** with the bitstream flashed into it.
 2. Turn on the **ESP32**, preloaded with Bluepad32 firmware.
 3. Wirelessly pair your **Xbox Controller**.
-4. Press `Y` on the controller to start the game!
+4. Press `Y` on the controller to start the game!!
 
 ---
 
