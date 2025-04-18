@@ -6,6 +6,17 @@
 
 ---
 
+## 👨🏻‍💻 Contributors
+
+Huge shoutout to my amazing teammates for their collaboration and dedication! 
+
+- [Isaac](https://github.com/isaacsaw25) : UI/UX Designer + Collision Detection
+- Hao Zhe : Frontend Engineer (Animations & Aesthetics)
+- [Mark](https://github.com/Markneoneo) : Backend Engineer (Movement)
+- [Neeraj](https://github.com/flyingapricot) : Backend Engineer (Controller)
+
+---
+
 ## 🚀 Quick Start
 
 1. Connect the **PMOD OLED** to the JB port of the **Basys3 board** with the bitstream flashed into it.
@@ -106,20 +117,20 @@ Example: Fade animation between level 0 and level 1.
 
 ---
 
-## 📚 References
-
-- 🎨 [Pixilart](https://www.pixilart.com/): For sprites & backgrounds
-- 🕹️ [Bluepad32](https://github.com/ricardoquesada/esp-idf-arduino-bluepad32-template): For controller connectivity
-- 🎮 [PICO-8 Celeste](https://www.lexaloffle.com/bbs/?tid=2145): Original 8-bit inspiration
-
----
-
-## 💡💡Dash FSM and Direction Handling 
+### 💡💡Dash FSM and Direction Handling 
 
 - A specialized FSM detects rising edges of the dash button and synchronizes them to a 100Hz clock for consistent animation timing. 
 
 - During a dash, the player’s facing direction (left or right) is tracked and used to control a sweep of LEDs (LED[15:0]) that turn OFF in sequence. 
 
 - Once the dash ends, all LEDs are restored to indicate dash availability. A short pulse extender ensures reliable dash activation and direction tracking.
+
+---
+
+## 📚 References
+
+- 🎨 [Pixilart](https://www.pixilart.com/): For sprites & backgrounds
+- 🕹️ [Bluepad32](https://github.com/ricardoquesada/esp-idf-arduino-bluepad32-template): For controller connectivity
+- 🎮 [PICO-8 Celeste](https://www.lexaloffle.com/bbs/?tid=2145): Original 8-bit inspiration
 
 ---
