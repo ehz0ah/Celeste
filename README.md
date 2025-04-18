@@ -113,3 +113,13 @@ Example: Fade animation between level 0 and level 1.
 - 🎮 [PICO-8 Celeste](https://www.lexaloffle.com/bbs/?tid=2145): Original 8-bit inspiration
 
 ---
+
+## 💡💡Dash FSM and Direction Handling 
+
+- A specialized FSM detects rising edges of the dash button and synchronizes them to a 100Hz clock for consistent animation timing. 
+
+- During a dash, the player’s facing direction (left or right) is tracked and used to control a sweep of LEDs (LED[15:0]) that turn OFF in sequence. 
+
+- Once the dash ends, all LEDs are restored to indicate dash availability. A short pulse extender ensures reliable dash activation and direction tracking.
+
+---
