@@ -11,7 +11,7 @@
 Huge shoutout to my amazing teammates for their collaboration and dedication! 
 
 - [Isaac](https://github.com/isaacsaw25) : UI/UX Designer + Collision Detection
-- Hao Zhe : Frontend Engineer (Animations & Aesthetics)
+- [Hao Zhe](https://github.com/ehz0ah) : Frontend Engineer (Animations & Aesthetics)
 - [Mark](https://github.com/Markneoneo) : Backend Engineer (Movement)
 - [Neeraj](https://github.com/flyingapricot) : Backend Engineer (Controller)
 
